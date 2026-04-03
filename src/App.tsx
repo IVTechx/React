@@ -1,121 +1,132 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+// import { useState } from 'react'
+import UseStateComponent from './components/use-state-components'
 
-function App() {
-  const [count, setCount] = useState(0)
 
-  return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
+const CreateCards = () =>{
+    const handleSubmit = (e: React.ChangeEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        console.log("Form submitted!");
+
+    };
+    // const [counter, setCounter] = useState(0);
+    return (
         <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
-          </p>
+            <h1 style={{display:'block', textAlign: "center"}}>Form</h1>
+            <div style={{display:'flex', justifyContent: "center"}}>
+              <form className='formConatainer' onSubmit={handleSubmit}>
+                  <div className='formPart'>
+                      <span>Profile Picture: </span>
+                      <select name="picture" id="img">
+                        <option value="" hidden>Select Picture</option>
+                        <option value="../src/assets/1.png">Alex</option>
+                        <option value="../src/assets/2.png">Jordan</option>
+                        <option value="../src/assets/3.png">Samantha</option>
+                      </select>
+                  </div>
+                  <div className='formPart'>
+                      <label htmlFor="firstName">Name: </label>
+                      <input type="text" name="name" id="firstName" />
+                  </div>
+                  <div className='formPart'>
+                      <label htmlFor="title">Title: </label>
+                      <input type="text" name="title" id="title" />
+                  </div>
+                  <div className='formPart'><button type="submit">Submit</button></div>
+              </form>
+            </div>
         </div>
-        <button
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+    )
 
-      <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
 }
 
+const App = () => {
+
+  console.log("Parent rendered")
+  return(
+    <div >
+    <CreateCards />
+    <div style={{display:'flex', justifyContent: "center"}}>
+      <UseStateComponent i = {1} name="Alex" title="Developer"/>
+      <UseStateComponent i = {2} name="Jordan" title="Project Manager"/>
+      <UseStateComponent i = {3} name="Samantha" title="Designer"/>
+    </div>
+    </div>
+)
+}
 export default App
+
+
+
+// // ID, title, completed
+// interface ToDo{
+//   id: number,
+//   title:string,
+//   content?:string,
+//   isCompleted: boolean
+// }
+
+// const App = () => {
+
+  
+//   const [todos, setTodos] = useState<ToDo[]>([]);
+//   const [inputValue, setInputValue] = useState("")
+
+//   const onInputChange = (e:React.ChangeEvent<HTMLInputElement>) =>{
+//     setInputValue(e.target.value);
+//   }
+
+//   const addToDo = () =>{
+//     const newToDO:ToDo={
+//       id:Date.now(),
+//       title:inputValue,
+//       isCompleted:false
+//     }
+//     setTodos([...todos, newToDO])
+//     setInputValue('');
+//     console.log(todos)
+//   }
+
+//   const deleteToDo = (id: number) =>{
+//     const newState = todos.filter((todos:ToDo) => todos.id !== id)
+//     setTodos(newState);
+//   }
+
+//     const completeToDo = (id: number) =>{
+//     const newState = todos.map((todo:ToDo) => {
+//       return todo.id === id ? {...todo, isCompleted: !todo.isCompleted} :todo
+//     })
+//     setTodos(newState);
+//   }
+
+//   return (
+//     <div>
+//       <div>To Do List</div>
+//       <div>
+//         <input type="text" onChange={onInputChange} value={inputValue} />
+//         <button onClick={addToDo}>Add</button>
+//       </div>
+//       <div>
+//         {
+//           todos.map((todo, index) => {
+//             return(
+//               <div key={todo.id} style={
+//                 {
+//                   backgroundColor: todo.isCompleted ? "green":'gray',
+//                   margin: "4px",
+//                   display: "flex",
+//                   justifyContent: "space-between"
+//                 }
+//               }>
+//                 <h2>{todo.title}</h2>
+//                 <button onClick={() => {deleteToDo(todo.id)}}>Delete</button>
+//                 <button onClick={() => {completeToDo(todo.id)}}>Completed</button>
+//               </div>
+//             )
+//           })
+//         }
+//       </div>
+//     </div>
+//   )
+// }
+
+// export default App
