@@ -1,18 +1,18 @@
-.formPart{
-    margin: 10px;
-    padding: 10px;
-    align-items: center;
+body {
+  margin: 10px;
+  padding: 20px;
+  background-color: #f2f2f2;
 }
 
-.formConatainer{
-    padding: 10px;
-    border: 1px solid;
-    border-radius: 15px;
-    margin: 10px;
+.formPart {
+  margin: 5px 10px 0;
+  padding: 5px;
 }
 
-
-
-body{
-    background-color: rgb(198, 201, 201);
+.formConatainer {
+  background-color: white;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 15px;
+  margin: 10px;
 }
