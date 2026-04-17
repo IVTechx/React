@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1776416604012" clover="3.2.0">
+  <project timestamp="1776416604012" name="All files">
+    <metrics statements="31" coveredstatements="31" conditionals="14" coveredconditionals="14" methods="12" coveredmethods="12" elements="57" coveredelements="57" complexity="0" loc="31" ncloc="31" packages="2" files="6" classes="6"/>
+    <package name="components">
+      <metrics statements="24" coveredstatements="24" conditionals="12" coveredconditionals="12" methods="11" coveredmethods="11"/>
+      <file name="Counter.tsx" path="/home/john/Desktop/React (copy)/vite-project/src/components/Counter.tsx">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="5" type="stmt"/>
+        <line num="8" count="5" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+      </file>
+      <file name="CounterButtons.tsx" path="/home/john/Desktop/React (copy)/vite-project/src/components/CounterButtons.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="6" type="stmt"/>
+      </file>
+      <file name="FetchNormal.tsx" path="/home/john/Desktop/React (copy)/vite-project/src/components/FetchNormal.tsx">
+        <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="12" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="13" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+      </file>
+      <file name="FetchWIthItem.tsx" path="/home/john/Desktop/React (copy)/vite-project/src/components/FetchWIthItem.tsx">
+        <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="12" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="13" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+      </file>
+      <file name="PostItem.tsx" path="/home/john/Desktop/React (copy)/vite-project/src/components/PostItem.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="5" type="stmt"/>
+        <line num="14" count="5" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="utils">
+      <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="fetcher.ts" path="/home/john/Desktop/React (copy)/vite-project/src/utils/fetcher.ts">
+        <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="2" count="8" type="stmt"/>
+        <line num="3" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

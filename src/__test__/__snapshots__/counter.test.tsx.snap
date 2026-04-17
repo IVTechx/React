@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Counter snapshot test matches snapshots for different states 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <h1
+      class="title"
+    >
+      Count: 0
+    </h1>
+    <div
+      class="btnGroup"
+    >
+      <button
+        class="btnDec"
+      >
+        Decrement
+      </button>
+      <button
+        class="btnReset"
+      >
+        Reset
+      </button>
+      <button
+        class="btnInc"
+      >
+        Increment
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Counter snapshot test matches snapshots for different states 2`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <h1
+      class="title"
+    >
+      Count: 1
+    </h1>
+    <div
+      class="btnGroup"
+    >
+      <button
+        class="btnDec"
+      >
+        Decrement
+      </button>
+      <button
+        class="btnReset"
+      >
+        Reset
+      </button>
+      <button
+        class="btnInc"
+      >
+        Increment
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Counter snapshot test matches snapshots for different states 3`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <h1
+      class="title"
+    >
+      Count: 1
+    </h1>
+    <div
+      class="btnGroup"
+    >
+      <button
+        class="btnDec"
+      >
+        Decrement
+      </button>
+      <button
+        class="btnReset"
+      >
+        Reset
+      </button>
+      <button
+        class="btnInc"
+      >
+        Increment
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Counter snapshot test matches snapshots for different states 4`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <h1
+      class="title"
+    >
+      Count: 0
+    </h1>
+    <div
+      class="btnGroup"
+    >
+      <button
+        class="btnDec"
+      >
+        Decrement
+      </button>
+      <button
+        class="btnReset"
+      >
+        Reset
+      </button>
+      <button
+        class="btnInc"
+      >
+        Increment
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

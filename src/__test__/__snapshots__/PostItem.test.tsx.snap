@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`PostItem snapshot tests matches closed snapshot 1`] = `
+<DocumentFragment>
+  <li
+    class="item"
+  >
+    <p
+      class="title"
+    >
+      Test Title
+    </p>
+    <button
+      class="toggleBtn"
+    >
+      Show More...
+    </button>
+  </li>
+</DocumentFragment>
+`;
+
+exports[`PostItem snapshot tests matches open snapshot after click 1`] = `
+<DocumentFragment>
+  <li
+    class="item"
+  >
+    <p
+      class="title"
+    >
+      Test Title
+    </p>
+    <button
+      class="toggleBtn"
+    >
+      Show less
+    </button>
+    <p
+      class="body"
+    >
+      Test Body
+    </p>
+  </li>
+</DocumentFragment>
+`;

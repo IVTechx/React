@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`FetchWithItem snapshot tests matches error snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="error"
+  >
+    Error loading posts
+  </div>
+</DocumentFragment>
+`;
+
+exports[`FetchWithItem snapshot tests matches loading snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="loading"
+  >
+    Loading...
+  </div>
+</DocumentFragment>
+`;
+
+exports[`FetchWithItem snapshot tests matches success snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <h1
+      class="heading"
+    >
+      Post List
+    </h1>
+    <ul
+      class="list"
+    >
+      <li
+        class="item"
+      >
+        <p
+          class="title"
+        >
+          Post 1
+        </p>
+        <button
+          class="toggleBtn"
+        >
+          Show More...
+        </button>
+      </li>
+      <li
+        class="item"
+      >
+        <p
+          class="title"
+        >
+          Post 2
+        </p>
+        <button
+          class="toggleBtn"
+        >
+          Show More...
+        </button>
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;

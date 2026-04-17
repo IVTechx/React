@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`FetchNormal snapshot tests matches error snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="error"
+  >
+    Error loading posts
+  </div>
+</DocumentFragment>
+`;
+
+exports[`FetchNormal snapshot tests matches loading snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="loading"
+  >
+    Loading...
+  </div>
+</DocumentFragment>
+`;
+
+exports[`FetchNormal snapshot tests matches success snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="container"
+  >
+    <h1
+      class="heading"
+    >
+      Post List
+    </h1>
+    <ul
+      class="list"
+    >
+      <div
+        class="postRow"
+      >
+         Post 1
+      </div>
+      <div
+        class="postRow"
+      >
+         Post 2
+      </div>
+    </ul>
+  </div>
+</DocumentFragment>
+`;
